@@ -42,14 +42,11 @@ namespace FileStreamEnumerator
                         if (chArr.Contains('.'))
                         {
                             double db = double.Parse(stripped, CultureInfo.InvariantCulture);
-                            // bool isInt = unchecked(db == (int)db);
-                            // Console.WriteLine($"db {db}, {isInt}");
                             if (unchecked(db == (int)db))
                             {
                                 _list.Add((int)db);
                             }
                         }
-                        // check if valid number
                         if(int.TryParse(stripped, out int value))
                         {
                             if (-100000000 < value && value < 1000000000)
