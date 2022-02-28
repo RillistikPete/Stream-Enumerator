@@ -13,12 +13,11 @@ namespace FileStreamEnumerator
         {
             Console.WriteLine("Reading Stream on file TestFile.txt");
             string path = ConfigurationManager.AppSettings.Get("testfilePath");
-            Console.WriteLine($"path {path}");
             Stream strm = new FileStream(path, FileMode.Open, FileAccess.Read);
             StreamIterator StrmIterClassList = new StreamIterator(strm);
             foreach (var i in StrmIterClassList)
             {
-                Console.WriteLine($"Iteration {i}");
+                Console.WriteLine($"{i}");
             }
         }
     }
