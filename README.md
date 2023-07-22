@@ -6,7 +6,7 @@ iteration over these integers.
 A valid integer is a sequence of one or more digits (without leading zeros), optionally preceded by
 a plus or minus sign, representing a number within the range ```[-1,000,000,000...1,000,000,000]```.
 
-We allow spaces to appear in a line before and/or after a valid integer. Lines are separated with the
+Spaces are allowed to appear in a line before and/or after a valid integer. Lines are separated with the
 line-feed character (ASCII code 10).
 
 There might be lines that do not represent valid integers, e.g. ```2u1, 23.9, #12, 00, ++1, 2000000000```.
