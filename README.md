@@ -1,6 +1,6 @@
 # Stream Enumerator
 
-A file contains a sequence of integers, stored one per line. Implement a class that facilitates
+A file contains a sequence of integers, stored one per line. This implements a class that facilitates
 iteration over these integers.
 
 A valid integer is a sequence of one or more digits (without leading zeros), optionally preceded by
@@ -12,8 +12,8 @@ line-feed character (ASCII code 10).
 There might be lines that do not represent valid integers, e.g. ```2u1, 23.9, #12, 00, ++1, 2000000000```.
 Such lines are considered to be comments, and should be discarded.
 
-Define a class that implements ```IEnumerable<int>``` and iterates over integers from a Stream object compliant with the above format.
-You should implement the following interface:
+The class implements ```IEnumerable<int>``` and iterates over integers from a Stream object compliant with the above format.
+It should implement the following interface:
 
 
 
